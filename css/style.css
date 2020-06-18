@@ -15,7 +15,7 @@ html {
 
 
 .container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -365,4 +365,77 @@ footer {
 
 .contact-img {
     margin: 1.5rem;
+}
+
+/* respon sive for 480px screen */
+@media screen and (max-width: 480px) {
+    nav {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .nav-flex {
+        height: auto;
+        flex-direction: column;
+    }    
+
+    ul.menu {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    ul.menu li {
+        margin-top: 1rem;
+    }
+
+    #banner {
+        height: 50vh;
+    }
+
+    .banner-title {
+        padding: 1rem;
+    }
+
+    .banner-title h1 {
+        font-size: 10vw;
+    }
+
+    #tours {
+        height: auto;
+    }
+
+    .tours-flex {
+        flex-direction: column;
+    }
+
+    .tours-flex-items {
+        width: auto;
+    }
+
+    #clients {
+        height: auto;
+    }
+
+    .clients-flex {
+        flex-direction: column;
+    }
+
+    .clients-items {
+        width: auto;
+        margin: 1rem;
+    }
+
+    footer, .footer-flex {
+        height: auto;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tours-list-flex {
+        flex-direction: column;
+    }
 }
